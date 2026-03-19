@@ -1,3 +1,9 @@
 body { 
     background-color: rgb(72, 72, 80);
+    background-image: url("assets/cat.jpg");
+    background-size: cover;
+}
+
+.background {
+    opacity: 0.2;
 }
