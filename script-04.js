@@ -19,4 +19,3 @@ function numberOrganizer() {
     console.log("Os números organizados em ordem crescente são: " + numbers);
 }
 
-numberOrganizer();

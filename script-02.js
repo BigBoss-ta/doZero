@@ -1,10 +1,9 @@
-function contagemRegresiva() {
+function contagemRegressiva() {
     let count = 10;
     while (count>-1) {
-        console.log(count);
+        alert(count);
         count--;
     }
-    console.log("lançamento realizado!")
+    alert("lançamento realizado!")
 }
 
-contagemRegresiva();
