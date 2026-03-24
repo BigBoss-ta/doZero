@@ -3,7 +3,13 @@ function folhaDePagamento() {
     let salario = parseFloat(prompt("Salário Bruto:"));
 
     if (!isNaN(salario)) {
+        if (salario < 1000) {
         let inss = salario * 0.08;
+        } else if (salario >= 1000 && salario < 1500) {
+        let inss = salario * 0.085;
+        } else {
+        let inss = salario * 0.09;
+        }
         let salarioLiquido = salario - inss;
         alert("Funcionário: " + nome + "\nSalário Bruto: R$ " + salario.toFixed(2) + "\nDesconto INSS: R$ " + inss.toFixed(2) + "\nSalário Líquido: R$ " + salarioLiquido.toFixed(2));
         console.log("Funcionário: " + nome);
